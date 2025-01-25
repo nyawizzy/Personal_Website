@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My digital Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="logob.jpeg" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Photo Gallery</h1>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="photo1.jfif" style="width:100%">
+                <div class="text">Me</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="photo4.jfif" style="width:100%">
+                <div class="text">Nature</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="photo6.jfif" style="width:100%">
+                <div class="text">Family</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="photo7.jfif" style="width:100%">
+                <div class="text">Vacation</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="photo8.jfif" style="width:100%">
+                <div class="text">Hobbies</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="photo9.jfif" style="width:100%">
+                <div class="text">Children's home</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Munga. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://twitter.com/mungaZolanski" class="fab fa-twitter"></a>
+            <a href="https://facebook.com/munga.alltheway" class="fab fa-facebook-f"></a>
+            <a href="https://instagram.com/bling.empireke" class="fab fa-instagram"></a>
+        </div>
+    </footer>
+    <script src="carousel.js"></script>
+</body>
+</html>
